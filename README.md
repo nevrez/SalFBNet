@@ -45,14 +45,14 @@ conda env create -f environment.yml
         
 - Our testing saliency results on public datasets
 
-    You can download our testing saliency resutls from this [Google Drive](https://drive.google.com/drive/folders/1KwQhft1l_siVR33tFLUiihdwPcuA_3b6?usp=sharing).
+    You can download our testing saliency results from this [Google Drive](https://drive.google.com/drive/folders/1KwQhft1l_siVR33tFLUiihdwPcuA_3b6?usp=sharing).
 
 ### 3. Run
 After downloading the pretrained models, you can run the script by 
 ```sh
 sh run_test.sh
 ```
-Alternativaly, you can modify the script for testing of different image folder and models (SalFBNet_Res18 or SalFBNet_Res18Fixed).
+Alternatively, you can modify the script for testing different image folders and models (SalFBNet_Res18 or SalFBNet_Res18Fixed).
 ```sh
 python main_test.py --model=pretrained_models/FBNet_Res18Fixed_best_model.pth \
 --save_fold=./results_Res18Fixed/ \
@@ -77,7 +77,7 @@ Dataset | #Image | #Training | #Val. | #Testing | Size | URL | Paper
 
 ## Performance Evaluation
 
-### 1. Visulization Results
+### 1. Visualization Results
 <img src="Figs/visualization.png" alt="input" style="width:600px">
 
 ### 2. Testing Performance on DUT-OMRON, PASCAL-S, and TORONTO
@@ -96,7 +96,7 @@ Our model is shown with the user name "GQDing3".
 
 Please check the leaderboard of [MIT300](https://saliency.tuebingen.ai/results.html) for more details.
 
-Our SalFBNet model ranked in Second best with sAUC, CC, and SIM metrics (Screenshot from December 10, 2021).
+Our SalFBNet model ranked Second best with sAUC, CC, and SIM metrics (Screenshot from December 10, 2021).
 
 <img src="Figs/mit300_leaderboard_sAUC_20211210.png" alt="input" style="width:600px">
 
